@@ -15,7 +15,7 @@ body {
 /* choice vw to size with the width of the screen, deciding the size between the cases and the header  */
 header {
   height: 70vw;
-  background: url(/styles/images/Header_video.png) ;
+  background: url(/styles/images/Header-video.png) ;
 	background-repeat:no-repeat;
   background-size: 100%;
   position: relative;
