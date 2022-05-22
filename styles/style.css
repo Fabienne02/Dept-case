@@ -14,7 +14,7 @@ body {
 
 /* choice vw to size with the width of the screen, deciding the size between the cases and the header  */
 header {
-  height: 75vw;
+  height: 70vw;
   background: url(/styles/images/Header_video.png) ;
 	background-repeat:no-repeat;
   background-size: 100%;
@@ -57,8 +57,10 @@ header img:nth-of-type(1) {
     display: block;
   }
 
-  .menu__wrapper {
+  .menu_wrapper {
     flex: 1;
+    margin-left: auto; 
+    margin-right: 0;;
   }
 
   .custom {
@@ -72,9 +74,16 @@ header img:nth-of-type(1) {
     cursor: pointer;
   }
 
-  .custom:focus ~ .stripe {
-    background: rgb(52, 52, 52);
- }
+  /* on focus only with tab  */
+:focus-visible {
+  outline: none !important;
+  border:2px solid rgb(26, 24, 247); 
+}
+
+input:focus-visible ~ .alt-burger-menu    {
+  outline: none !important;
+  border:2px solid rgb(26, 24, 247);
+} 
 
   .alt-burger-menu {
       padding: 2.3em;
@@ -113,6 +122,7 @@ header img:nth-of-type(1) {
     top: 10em;
     text-align: right;
     right: 15%;
+    width: 80vw;
   }
   
   .overlay a {
@@ -121,10 +131,24 @@ header img:nth-of-type(1) {
     color: #ffffff;
     display: block;
     transition: 0.3s;
+    width: 16%;
+    margin-left: auto; 
+    margin-right: 0;
   }
   
-  .overlay a:hover, .overlay a:focus {
+  .overlay a:hover, .overlay a:focus{
     color: rgb(140, 140, 140);
+  }
+
+  .overlay a:hover:after{
+    content: "";
+    display: block;
+    background: url("/styles/images/arrow-white.png") no-repeat;
+    background-size: 0.9vw;
+    width: 4vh;
+    height: 8vh;
+    float: left;
+    margin: 0.4em 0 0 0.4em;
   }
   
   .overlay .closebtn {
@@ -203,28 +227,54 @@ header .header-view-case a {
   }
 }
 
+figcaption, .all-work {
+  text-transform: uppercase;
+  color:rgb(147, 147, 147);
+  font-size: 4vh;
+  margin-bottom: 1em;
+}
+
+.all-work {
+  text-transform:none;
+  display: flex;
+  justify-content: flex-end;
+  width: 90vw;
+}
+
+.all-work span {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.all-work span:after {
+  content: "";
+  display: block;
+  background: url("/styles/images/arrow-down.png") no-repeat;
+  background-size: 0.9vw;
+  width: 4vh;
+  height: 8vh;
+  float: right;
+  margin: 0.4em 0 0 0.4em;
+}
+
 .cases { 
   display: flex;
   justify-content: center;
-  padding: 3em;
+  flex-wrap: wrap;
+  width: 90vw;
   padding-top: 0em;
+  padding-bottom: 5em;
+  margin: 0 auto;
 }
 
-/* .cases div {
-  margin-bottom: 1em;
-} */
+.cases div {
+  padding-bottom: 3em;
+  width: 40vw;
+}
 
 .cases div img {
-  width: 45vw;
-}
-
-@media only screen and (max-device-width: 600px) {
-  .cases div img { 
-    width: 90vw;
-  }
-  .cases {
-    flex-wrap: wrap;
-  }
+  width: 40vw;
 }
 
 .cases div:nth-of-type(2n) {
@@ -234,16 +284,10 @@ header .header-view-case a {
 .cases div:nth-of-type(1n) {
   margin-right:0.7em;
 }
-
-figcaption {
-  text-transform: uppercase;
-  color:rgb(147, 147, 147);
-  font-size: 4vh;
-}
-
 .cases p {
  font-size: 6vh;
  margin: 0;
+ width: 40vw;
 }
 
 .cases a {
@@ -263,8 +307,17 @@ figcaption {
 }
 
 @media only screen and (max-device-width: 600px) {
-   .cases a {
+  .cases div img { 
+    width: 90vw;
+  }
+  .cases {
+    display: block;
+  }
+  .cases a {
     visibility: hidden;
+  }
+  .cases p {
+    width: 87vw;
   }
 }
 
@@ -293,8 +346,9 @@ figcaption {
 .clients div {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 70vw;
   padding-bottom: 5em;
 }
 
@@ -302,24 +356,28 @@ figcaption {
   width: 33%;
 }
 
-@media only screen and (max-device-width: 600px) {
-  .clients img:nth-of-type(n+6) {
-   visibility: hidden;
- }
-}
+  @media only screen and (max-device-width: 600px) {
+    .clients img:nth-of-type(n+7) {
+      display: none;
+    }
+    .clients img {
+      width: 50%;
+    }
+  }
 
 /* FOOTER  */
 footer {
+ display: flex;
  background-color: black;
- margin-right: 5em;
+ width: 100vw;
 }
 
 .footer-top, .footer-bottom {
   display: flex;
   justify-content: space-between;
-  width: 80vw;
   padding: 3em;
   margin: 0 auto;
+  width: 80vw;
 }
 
 footer .logo-dept {
@@ -374,21 +432,30 @@ footer .logo-dept {
 }
 
 .back-top {
-  float: right;
-  background-color: white;
-  height: 10em;
-  width: 5em;
+  background-color: rgb(255, 255, 255);
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.back-top a {
+.back-top p {
   color: rgb(26, 24, 247);
-  font-size: 4vh;
-  display: flex;
-  justify-content: center;
+  font-size: 3.5vh;
 }
 
 .back-top img {
-  height: 4em;
-  display: block;
-  margin: 0 auto;
+  height: 2em;
+}
+
+.back-top a:focus ~ .back-top   {
+  outline: none !important;
+  border:2px solid rgb(26, 24, 247);
+}
+
+@media only screen and (max-device-width: 600px) {
+  .back-top {
+    display: none;
+  }
 }

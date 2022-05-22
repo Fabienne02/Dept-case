@@ -23,6 +23,25 @@ function openNav() {
             document.getElementById("myNav").style.visibility= "hidden"
         }, 400);
     }
-  
   }
-  
+
+  var focused = true;
+
+window.onfocus = function() {
+    focused = true;
+    console.log("yes")
+};
+window.onblur = function() {
+    focused = false;
+    console.log("no")
+};
+
+//   const btn = document.querySelector(".header-view-case a")
+
+//   function tab() {
+//     if (btn.hasFocus()) {
+//         console.log('Tab is active')
+//   }
+// }
+
+// tab()
