@@ -1,0 +1,14 @@
+{
+    "name": "Dept case",
+    "short_name": "DEPTcase",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "rgb(255, 255, 255)",
+    "description": "Dept-case",
+    "theme_color": "rgb(0, 0, 0)",
+    "icons": [{
+        "src": "./styles/images/icons/dept-logo-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
