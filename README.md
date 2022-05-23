@@ -48,7 +48,7 @@ npm install || npm i
 ```
 5. Start de applicatie met de volgende command
 ```
-npm install || npm start
+npm start
 ```
 6. Open de de localhost:3002 in je browser
 
