@@ -37,7 +37,7 @@ Server & Client side rendered.
 ## Installing
 1. Clone deze repository naar jouw lokale folder
 ```
-git clone https://github.com/Fabienne02/PWA---Quotes.git
+git clone https://github.com/Fabienne02/Dept-case.git
 ```
 2. Open de folder in jouw code applicatie [Zoals VSCODE](https://code.visualstudio.com/Download)
 4. Install all packages
@@ -57,4 +57,4 @@ Lighthouse information:
 <img src="https://github.com/Fabienne02/Dept-case/blob/main/assets/content-time.jpg">
 
 ## Author
-De maker van deze WPA is: [*Fabienne van den Steen*](https://github.com/Fabienne02)
+De maker van deze PWA is: [*Fabienne van den Steen*](https://github.com/Fabienne02)
