@@ -1,10 +1,8 @@
 # Dept case 💻
-<img src="https://github.com/Fabienne02/Quotes/blob/main/assets/Focus quote.jpg" width=530 >
+<img src="https://github.com/Fabienne02/Dept-case/blob/main/public/styles/images/Header-video.png" width=530 >
 
 # Introduction
 This case is made as a intern technical assigment for Dept
-
-<img src="https://github.com/Fabienne02/Quotes/blob/main/assets/quotes.png](https://github.com/Fabienne02/Dept-case/blob/main/public/styles/images/Header-video.png" height="700" alt="banner">
 
 ## Table of contents
   - [Table of contents](#table-of-contents)
