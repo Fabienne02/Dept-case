@@ -1,6 +1,5 @@
-// Bron: https://github.com/cmda-minor-web/progressive-web-apps-2122/blob/main/examples/node-advanced-static-prerendering-example/src/service-worker.js
-// Static files in the cach
 const CORE_CACHE_VERSION = 'v3'
+    // To demonstrate the static caching, could also be looping through an array of all images
 const CORE_ASSETS = [
     '/',
     '/styles/style.css',
@@ -36,6 +35,7 @@ self.addEventListener('activate', event => {
     event.waitUntil(clients.claim());
 });
 
+// This part would be applied if you'd be directed to a new page
 // Fetch files and in cache, else if offline cache page
 self.addEventListener('fetch', event => {
     //   console.log('Fetch event: ', event.request.url);

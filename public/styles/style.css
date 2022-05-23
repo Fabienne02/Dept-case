@@ -15,7 +15,7 @@ body {
 }
 
 
-/* choice vw to size with the width of the screen, deciding the size between the cases and the header  */
+/* choise vw to size with the width of the screen, deciding the size between the cases and the header  */
 
 header {
     height: 70vw;
@@ -37,6 +37,9 @@ a {
     text-decoration: none;
 }
 
+
+/* HEADER */
+
 header img:nth-of-type(1) {
     height: 1.2em;
     padding: 2em;
@@ -52,12 +55,41 @@ header img:nth-of-type(1) {
 }
 
 
+/* choice vw to size with the width of the screen, making it stay big but responsive  */
+
+h1 {
+    margin-left: 0.1em;
+    margin-top: 0.2em;
+    font-size: 30vw;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+header .header-view-case {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .header-view-case a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 0.7em;
+    width: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-right: 3em;
+    top: -4em;
+}
+
+
 /* MEATBALL MENU  */
 
 .stripe {
-    width: 20px;
-    height: 2px;
-    margin: 3px;
+    width: 1.6em;
+    height: 0.2em;
+    margin: 0.3em;
     background: rgb(0, 0, 0);
     border-radius: 10%;
     display: block;
@@ -140,10 +172,13 @@ hr {
     width: 80vw;
 }
 
+
+/* VH to scale with the height ->still takes up whole screen VH  */
+
 .overlay a {
     padding: 8px;
-    font-size: 2.4rem;
-    color: #ffffff;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
     display: block;
     transition: 0.3s;
     width: 5em;
@@ -168,25 +203,11 @@ hr {
     margin: 0.4em 0 0 0.4em;
 }
 
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 1rem;
-}
-
 #nav {
     z-index: 10;
     position: absolute;
     top: 0em;
     right: 0em;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay .closebtn {
-        top: 15px;
-        right: 35px;
-    }
 }
 
 @media only screen and (max-device-width: 600px) {
@@ -198,35 +219,6 @@ hr {
 #myNav {
     width: 0%;
     visibility: hidden;
-}
-
-
-/* choice vw to size with the width of the screen, making it stay big but responsive  */
-
-h1 {
-    margin-left: 0.1em;
-    margin-top: 0.2em;
-    font-size: 30vw;
-    font-weight: 200;
-    margin-bottom: 0;
-}
-
-header .header-view-case {
-    display: flex;
-    justify-content: flex-end;
-}
-
-header .header-view-case a {
-    position: relative;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 0.7em;
-    width: 10em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-right: 3em;
-    top: -4em;
 }
 
 @media only screen and (max-device-width: 600px) {
@@ -244,6 +236,9 @@ header .header-view-case a {
         justify-content: center;
     }
 }
+
+
+/* DROPDOWN */
 
 .dropbtn {
     border: none;
@@ -280,12 +275,13 @@ header .header-view-case a {
     margin-top: 2em;
     display: none;
     position: absolute;
-    background-color: #000000;
-    width: 20vw;
+    background-color: rgb(0, 0, 0);
+    width: 28vw;
     font-size: 4vh;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    text-align: right;
 }
 
 @media only screen and (max-device-width: 600px) {
@@ -295,11 +291,15 @@ header .header-view-case a {
 }
 
 .dropdown-content a {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
+}
+
+.dropdown-content a:focus {
+    color: rgb(140, 140, 140);
 }
 
 .dropdown-content hr {
@@ -313,6 +313,9 @@ header .header-view-case a {
 .show {
     display: block;
 }
+
+
+/* CASES */
 
 figcaption {
     text-transform: uppercase;
@@ -402,6 +405,9 @@ figcaption {
     }
 }
 
+
+/* CLIENTS */
+
 .clients {
     background-color: rgb(243, 246, 246);
 }
@@ -464,20 +470,26 @@ footer {
     width: 80vw;
 }
 
+
+/* FOOTER TOP */
+
 footer .logo-dept {
     width: 4.5em;
 }
 
 .footer-top div:nth-of-type(1) a {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     margin-left: 1em;
-    font-size: 1.4vw;
+    font-size: 2.2vw;
 }
 
 .footer-top div:nth-of-type(2) img {
     height: 1em;
     margin-right: 1.4em;
 }
+
+
+/* FOOTER TOP */
 
 .footer-bottom {
     display: flex;
@@ -493,31 +505,6 @@ footer .logo-dept {
     color: rgb(128, 128, 128);
     font-size: 0.7em;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-@media only screen and (max-device-width: 600px) {
-    footer .logo-dept {
-        display: none;
-    }
-    .footer-top div a,
-    .footer-top div:nth-of-type(2) img {
-        display: block;
-    }
-    .footer-top div:nth-of-type(1) a {
-        font-size: 2em;
-        justify-content: flex-start;
-    }
-    .footer-top div:nth-of-type(2) img {
-        margin-bottom: 2em;
-        height: 2em;
-    }
-    .footer-bottom div,
-    .footer-bottom {
-        display: block;
-    }
-    .footer-bottom div {
-        margin-bottom: 2em;
-    }
 }
 
 .back-top {
@@ -544,6 +531,28 @@ footer .logo-dept {
 }
 
 @media only screen and (max-device-width: 600px) {
+    footer .logo-dept {
+        display: none;
+    }
+    .footer-top div a,
+    .footer-top div:nth-of-type(2) img {
+        display: block;
+    }
+    .footer-top div:nth-of-type(1) a {
+        font-size: 2em;
+        justify-content: flex-start;
+    }
+    .footer-top div:nth-of-type(2) img {
+        margin-bottom: 2em;
+        height: 2em;
+    }
+    .footer-bottom div,
+    .footer-bottom {
+        display: block;
+    }
+    .footer-bottom div {
+        margin-bottom: 2em;
+    }
     .back-top {
         display: none;
     }
