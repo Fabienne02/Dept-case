@@ -5,12 +5,16 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon index.js"
+        "start": "node index.js"
     },
     "author": "F. van den Steen",
     "license": "ISC",
     "dependencies": {
+        "cache": "^2.3.1",
         "compression": "^1.7.4",
-        "nodemon": "^2.0.16"
+        "express": "^4.18.1",
+        "node": "^17.7.2",
+        "nodemon": "^2.0.16",
+        "url": "^0.11.0"
     }
 }

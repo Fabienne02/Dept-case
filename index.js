@@ -1,10 +1,6 @@
 const express = require("express");
 const app = express();
 const compression = require("compression")
-const { cache } = require("ejs");
-const { fileURLToPath } = require("url");
-const res = require("express/lib/response");
-const nodemon = require("nodemon");
 
 const port = process.env.PORT || 3002;
 
