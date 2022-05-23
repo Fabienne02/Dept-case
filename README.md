@@ -27,6 +27,8 @@ Dynamic cache are often url locations visited online by the user and cached afte
 Quotes is encoded in EJS (node), Javascript
 Server & Client side rendered.
 
+Node version: v14.18.1
+
 ## Features
 <ul>
   <li>Partly offline acces</li>
